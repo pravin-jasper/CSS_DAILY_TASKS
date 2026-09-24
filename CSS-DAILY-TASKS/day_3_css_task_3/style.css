@@ -1,0 +1,311 @@
+body{
+				
+				font-style: initial;
+				
+				
+			}
+
+			.bg{
+				margin-top: 10px;
+				width: 100%;
+			}
+			
+			.heading1{
+				
+
+				
+				margin-top: -360px;
+				width:20%;
+				padding:30px;
+				margin-bottom: 130px;
+				border-color: black;
+				
+				background-color:black;
+				color:#b24c20;
+				
+			}
+
+			.heading2{
+				border: 2px;
+				color:darkgoldenrod;
+				background-color:#b24c20;
+				margin-top: -100px;
+				padding: 10px;
+				width: 250px;
+				margin-bottom: 400px;
+				border-color: black;
+				border-width: 100px;
+			}
+			.onebg{
+				padding: 10px;
+				background-color: tomato;
+				margin-bottom: 50px;
+				color: azure;
+			}
+
+			.two{
+				
+				width: 40%;
+				background-color: lightcyan;
+				color: darkgoldenrod;
+				padding: 10px;
+				margin-left: 70px;
+
+			}
+
+			.two img{
+				height: 400px;
+				width: 100%;
+
+			}
+
+			.two button{
+				
+				padding: 10px;
+				background-color: #7fff00 ;
+				color: #8b0000 ;
+				font-weight: bold;
+				margin-left: 50px;
+			}
+
+			.two a{
+				color: #8b0000;
+			}
+			
+		
+
+			.three{
+				margin-top: -630px;
+				margin-left: 55%;
+				margin-bottom: 100px;
+				background-color: #00d1d1;
+				width: 40%;
+				border: 100px;
+				padding: 10px;
+				
+			}
+
+			.three img{
+				height: 400px;
+				width: 100%;
+			}
+
+			.three button{
+				background-color: brown;	
+				padding: 10px;
+				color: #b0e0e6;
+			}
+
+			.four{
+				
+				background-color: aqua;
+				width: 100.2%;
+				margin-bottom: 50px;
+			}
+
+			.four button{
+			    width:80px;
+				margin-left: 30px;
+				padding:10px;
+				background-color:#b22222;;
+				color:#d3d3d3 ;
+				margin-top: 10px;
+			}
+			
+			.four a{
+				width:10px;
+				color:#b22222;
+				margin-left:130px;
+				margin-top:-50%;
+				
+				
+			}
+			
+			.four img{
+				margin-left:1300px;
+				height:200px;
+				width:200px;
+				border:10px;
+				border-radius:100%;
+			}
+				
+			.four h3{
+				margin-top:-180px;
+			}
+			
+			.five img{
+				height: 200px;
+				margin-left:10px;
+				width: 400px;
+				
+				}
+
+			.five{
+				background-color:#7fffd4 ;
+				width:400px;
+				padding:10px;
+				margin-left: 40px;
+				margin-top: 60px;
+			}
+			
+			.five a{
+				color:brown;
+			}
+			.six img{
+				height:200px;
+				width:400px;
+				}
+				
+			.six{
+				background-color:#fdf5e6;
+				margin-left:530px;
+				margin-top:-420px;
+				width:400px;
+				}
+			.six a{
+				color:brown;
+			}
+			
+			.seven img{
+				height:200px;
+				width:400px;
+				}
+				
+			.seven{
+				background-color:#ee82ee ;
+				margin-left:1000px;
+				margin-top:-360px;
+				width:400px;
+
+				}
+			.seven a{
+				color:brown;
+			}
+
+			.eight img{
+				height:200px;
+				width:200px;
+				border-radius: 100%;
+			}
+
+			.eight{
+				background-color: aliceblue;
+				margin-bottom: 60px;
+				margin-top: 50px;
+			}			
+			.eight h1{
+				margin-left: 380px;
+				margin-top: -150px;
+			}
+			.eight p{
+				margin-left: 380px;
+			}
+
+			.eight button{
+				margin-left: 450px;
+				padding: 5px;
+				color: aliceblue;
+				font-weight: bolder;
+				background-color: #b22222;
+			}
+
+			.ten{
+				margin-left:30px;
+				width: 300px;
+				padding: 20px;
+				background-color: linen;
+				margin-bottom: 5px;
+
+			}
+
+			.elven{
+				margin-left:500px;
+				margin-top: -150px;
+				width: 300px;
+				padding: 10px;
+				background-color: lightcoral;
+			}
+
+			.twelven{
+				margin-left:1000px;
+				margin-top: -130px;
+				width: 300px;
+				padding: 10px;
+				margin-bottom: 10px;
+				background-color: lightgoldenrodyellow;
+			}
+
+			.thrity{
+				margin-left:20px;
+				width: 150px;
+				padding: 20px;
+			}
+
+
+			.fourty{
+				margin-left:250px;
+				margin-top: -310px;
+				width: 200px;
+				padding: 10px;
+			}
+
+			
+			.fivty{
+				margin-left:480px;
+				margin-top: -280px;
+				width: 200px;
+				padding: 10px;
+			}
+
+			.fooder{
+				margin-top: 50px;
+				background-color: black;
+				color: azure;
+			}
+
+			.fooder a{
+				color: azure;
+			}
+
+			.thrity{
+				margin-left: 2%;
+
+			}
+
+			.fourty{
+				margin-left: 600px;
+			}
+
+			.fivty{
+				margin-left:1200px;
+			}
+
+			
+			.nine a{
+				margin-left: 800px;
+				margin-top: -50px;
+				width: 40px;
+				color: #b22222;
+
+			}
+
+			.nine{
+				margin-bottom: 10px;
+				margin-top: 10px;
+				width: 97%;
+				background-color: lightseagreen;
+				padding: 20px;
+			}
+			
+			.navbar{
+				
+				padding: 20px;
+				background-color: lemonchiffon;
+				text-decoration:none;
+				margin-top: 50px;
+				text-align:right;
+				word-spacing:15px;
+				font-family:arial;
+				font-size:20px;
+				margin-right:10px;
+			}
