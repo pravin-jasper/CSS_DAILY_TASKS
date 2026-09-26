@@ -1,0 +1,276 @@
+/* BASIC SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/*  NAVIGATION */
+
+header {
+    height: 70px;
+    background-color: #111;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 28px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+
+/* Login Button */
+
+.login {
+    background-color: #e50914;
+    color: white;
+
+    border: none;
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login:hover {
+    background-color: #b20710;
+    transform: scale(1.05);
+}
+
+
+/*  HERO SECTION */
+
+.hero {
+    height: 600px;
+
+    background:
+        linear-gradient(
+            to right,
+            #000 10%,
+            transparent 80%
+        ),
+        url("https://picsum.photos/1600/900?random=20");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 70px;
+}
+
+
+/* Hero Animation */
+
+.hero-content {
+    max-width: 550px;
+
+    animation: slideIn 1.5s ease;
+}
+
+@keyframes slideIn {
+
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+.small-title {
+    color: #e50914;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1;
+
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/*  HERO BUTTONS */
+
+.watch-btn,
+.more-btn {
+
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.watch-btn {
+    background-color: white;
+    color: black;
+}
+
+.more-btn {
+    background-color: #555;
+    color: white;
+    margin-left: 10px;
+}
+
+.watch-btn:hover {
+    background-color: #ddd;
+    transform: scale(1.08);
+}
+
+.more-btn:hover {
+    background-color: #777;
+    transform: scale(1.08);
+}
+
+
+/*  MOVIE SECTION */
+
+.movies {
+    padding: 40px 50px;
+}
+
+.movies h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+
+/* Movie Container */
+
+.movie-container {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Movie Card */
+
+.movie-card {
+    width: 200px;
+
+    background-color: #181818;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s,
+        box-shadow 0.4s;
+}
+
+
+/* Movie Image */
+
+.movie-card img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+
+/* Card Hover Animation */
+
+.movie-card:hover {
+
+    transform: translateY(-15px) scale(1.05);
+
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4);
+}
+
+.movie-card:hover img {
+    transform: scale(1.08);
+}
+
+
+/* Movie Text */
+
+.movie-card h3 {
+    padding: 10px 10px 3px;
+}
+
+.movie-card p {
+    color: #f5c518;
+    padding: 0 10px 12px;
+}
+
+
+/*  FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #777;
+
+    border-top: 1px solid #333;
+
+    margin-top: 30px;
+}
