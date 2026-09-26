@@ -160,12 +160,4 @@ You can improve this project by adding:
 * Movie details popup
 * Favorite movie functionality
 
-## 👨‍💻 Author
 
-Created as a beginner **HTML & CSS project**.
-
-## ❤️ Thank You
-
-Thanks for checking out **MovieFlix**!
-
-**Watch. Enjoy. Repeat. 🎬🍿**
