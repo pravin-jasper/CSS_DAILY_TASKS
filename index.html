@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>CSS Daily Tasks | Pravin Jasper</title>
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #f5f7fb;
+color: #172033;
+}
+
+/* NAVBAR */
+
+.navbar {
+width: 100%;
+padding: 20px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #ffffff;
+border-bottom: 1px solid #e5e7eb;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.logo {
+font-size: 25px;
+font-weight: 800;
+color: #172033;
+}
+
+.logo span {
+color: #635bff;
+}
+
+.navbar nav {
+display: flex;
+gap: 30px;
+}
+
+.navbar nav a {
+text-decoration: none;
+color: #4b5563;
+font-weight: 600;
+transition: 0.3s;
+}
+
+.navbar nav a:hover {
+color: #635bff;
+}
+
+/* HERO*/
+
+.hero {
+min-height: 560px;
+padding: 80px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 60px;
+background: linear-gradient(135deg, #eef2ff, #ffffff);
+}
+
+.hero-content {
+max-width: 700px;
+}
+
+.small-title {
+color: #635bff;
+font-size: 14px;
+font-weight: 800;
+letter-spacing: 2px;
+margin-bottom: 18px;
+}
+
+.hero h1 {
+font-size: 64px;
+line-height: 1.05;
+margin-bottom: 25px;
+}
+
+.hero h1 span {
+display: block;
+color: #635bff;
+}
+
+.hero p {
+font-size: 18px;
+line-height: 1.8;
+color: #5d6677;
+margin-bottom: 30px;
+}
+
+.hero-btn {
+display: inline-block;
+padding: 15px 25px;
+background: #635bff;
+color: white;
+text-decoration: none;
+border-radius: 10px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.hero-btn:hover {
+transform: translateY(-4px);
+box-shadow: 0 12px 25px rgba(99, 91, 255, 0.25);
+}
+
+/* HERO BOX */
+
+.hero-box {
+min-width: 230px;
+height: 230px;
+border-radius: 30px;
+background: #172033;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+box-shadow: 0 25px 50px rgba(23, 32, 51, 0.2);
+transform: rotate(5deg);
+transition: 0.4s;
+}
+
+.hero-box:hover {
+transform: rotate(0deg) scale(1.05);
+}
+
+.code-symbol {
+font-size: 40px;
+color: #8b83ff;
+margin-bottom: 10px;
+}
+
+.hero-box h2 {
+font-size: 55px;
+}
+
+.hero-box p {
+color: #ffffff;
+margin: 0;
+font-size: 16px;
+}
+
+/* PROJECT SECTION*/
+
+.projects-section {
+padding: 90px 8%;
+}
+
+.section-title {
+text-align: center;
+max-width: 700px;
+margin: 0 auto 55px;
+}
+
+.section-title p {
+color: #635bff;
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 2px;
+margin-bottom: 10px;
+}
+
+.section-title h2 {
+font-size: 42px;
+margin-bottom: 15px;
+}
+
+.section-title span {
+color: #6b7280;
+line-height: 1.7;
+}
+
+
+
+.project-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+/*PROJECT CARD*/
+
+.project-card {
+background: white;
+border-radius: 18px;
+padding: 30px;
+position: relative;
+overflow: hidden;
+border: 1px solid #e5e7eb;
+transition: 0.35s;
+}
+
+.project-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 20px 45px rgba(23, 32, 51, 0.12);
+}
+
+.project-card.featured {
+border: 2px solid #635bff;
+}
+
+.project-number {
+position: absolute;
+top: 20px;
+right: 20px;
+font-size: 13px;
+font-weight: bold;
+color: #a1a7b5;
+}
+
+.project-icon {
+width: 70px;
+height: 70px;
+border-radius: 18px;
+background: #eef0ff;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 32px;
+margin-bottom: 25px;
+}
+
+.project-tag {
+display: inline-block;
+font-size: 11px;
+font-weight: bold;
+letter-spacing: 1px;
+color: #635bff;
+margin-bottom: 10px;
+}
+
+.project-content h3 {
+font-size: 24px;
+margin-bottom: 12px;
+}
+
+.project-content p {
+color: #6b7280;
+line-height: 1.7;
+margin-bottom: 20px;
+}
+
+/* SKILLS */
+
+.skills {
+display: flex;
+flex-wrap: wrap;
+gap: 7px;
+margin-bottom: 25px;
+}
+
+.skills span {
+padding: 6px 10px;
+background: #f1f3f7;
+border-radius: 6px;
+font-size: 11px;
+font-weight: bold;
+color: #596274;
+}
+
+/* PROJECT BUTTON */
+
+.project-btn {
+display: inline-block;
+text-decoration: none;
+color: #635bff;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.project-btn:hover {
+color: #3f37c9;
+transform: translateX(5px);
+}
+
+/* ABOUT*/
+
+.about {
+padding: 90px 8%;
+background: #172033;
+color: white;
+}
+
+.about-content {
+max-width: 1000px;
+margin: auto;
+}
+
+.about-content > p:first-child {
+color: #8b83ff;
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 2px;
+margin-bottom: 15px;
+}
+
+.about h2 {
+font-size: 42px;
+margin-bottom: 20px;
+}
+
+.about-content > p {
+color: #c5cad5;
+line-height: 1.8;
+max-width: 700px;
+}
+
+/* LEARNING LIST */
+
+.learning-list {
+margin-top: 40px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 15px;
+}
+
+.learning-list div {
+padding: 20px;
+border: 1px solid #30394d;
+border-radius: 12px;
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.learning-list strong {
+color: #8b83ff;
+}
+
+.learning-list span {
+color: #e2e5eb;
+}
+
+/*FOOTER*/
+
+footer {
+padding: 35px 8%;
+background: #101624;
+color: #aeb5c2;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+}
+
+footer .logo {
+color: white;
+}
+
+footer p {
+font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.project-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.learning-list {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+}
+
+@media (max-width: 700px) {
+
+
+.navbar {
+    padding: 18px 5%;
+}
+
+.navbar nav {
+    display: none;
+}
+
+.hero {
+    padding: 70px 5%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+.hero-box {
+    min-width: 190px;
+    height: 190px;
+}
+
+.projects-section {
+    padding: 70px 5%;
+}
+
+.section-title h2 {
+    font-size: 34px;
+}
+
+.project-grid {
+    grid-template-columns: 1fr;
+}
+
+.learning-list {
+    grid-template-columns: 1fr;
+}
+
+.about {
+    padding: 70px 5%;
+}
+
+.about h2 {
+    font-size: 34px;
+}
+
+footer {
+    flex-direction: column;
+    text-align: center;
+}
+
+
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <div class="logo">
+        CSS<span>Daily</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">HTML • CSS • DAILY PRACTICE</p>
+
+        <h1>
+            CSS Daily
+            <span>Tasks & Projects</span>
+        </h1>
+
+        <p>
+            A collection of CSS practice projects created while
+            learning layouts, Flexbox, Grid, animations,
+            forms, responsive design and modern UI styling.
+        </p>
+
+        <a href="#projects" class="hero-btn">
+            Explore Projects
+        </a>
+
+    </div>
+
+    <div class="hero-box">
+
+        <div class="code-symbol">&lt;/&gt;</div>
+
+        <h2>7</h2>
+
+        <p>Projects</p>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<main id="projects">
+
+    <section class="projects-section">
+
+        <div class="section-title">
+
+            <p>MY PRACTICE WORK</p>
+
+            <h2>CSS Projects</h2>
+
+            <span>
+                Explore each project and view the individual
+                HTML and CSS implementation.
+            </span>
+
+        </div>
+
+
+        <div class="project-grid">
+
+
+            <!-- FINAL PROJECT -->
+
+            <article class="project-card featured">
+
+                <div class="project-number">
+                    FINAL
+                </div>
+
+                <div class="project-icon">
+                    🎓
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-tag">
+                        FINAL PROJECT
+                    </span>
+
+                    <h3>LearnHub</h3>
+
+                    <p>
+                        Online Learning Platform with course cards,
+                        dashboard, progress bars, Grid, Flexbox,
+                        animations and responsive design.
+                    </p>
+
+                    <div class="skills">
+                        <span>Grid</span>
+                        <span>Flexbox</span>
+                        <span>Animation</span>
+                        <span>Responsive</span>
+                    </div>
+
+                    <a
+                        href="CSS-DAILY-TASKS/Css_Final_Project/index.html"
+                        class="project-btn">
+                        Open Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- DAY 1 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <div class="project-icon">
+                    📝
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-tag">
+                        DAY 1
+                    </span>
+
+                    <h3>CSS Task 1</h3>
+
+                    <p>
+                        Beginner CSS practice project focusing on
+                        basic HTML structure and CSS styling.
+                    </p>
+
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Basics</span>
+                    </div>
+
+                    <a
+                        href="CSS-DAILY-TASKS/day_1_css_task_1/index.html"
+                        class="project-btn">
+                        Open Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- DAY 2 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <div class="project-icon">
+                    💳
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-tag">
+                        DAY 2
+                    </span>
+
+                    <h3>Credit Card Form</h3>
+
+                    <p>
+                        IndusInd Bank credit card payment form
+                        created to practice HTML forms and CSS styling.
+                    </p>
+
+                    <div class="skills">
+                        <span>Forms</span>
+                        <span>Inputs</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <a
+                        href="CSS-DAILY-TASKS/day_2_css_task_2/index.html"
+                        class="project-btn">
+                        Open Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- DAY 3 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <div class="project-icon">
+                    🏦
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-tag">
+                        DAY 3
+                    </span>
+
+                    <h3>NAB Banking Website</h3>
+
+                    <p>
+                        Banking website UI inspired by a modern
+                        financial services website.
+                    </p>
+
+                    <div class="skills">
+                        <span>Layout</span>
+                        <span>Cards</span>
+                        <span>Navigation</span>
+                    </div>
+
+                    <a
+                        href="CSS-DAILY-TASKS/day_3_css_task_3/index.html"
+                        class="project-btn">
+                        Open Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- DAY 4 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    04
+                </div>
+
+                <div class="project-icon">
+                    🍔
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-tag">
+                        DAY 4
+                    </span>
+
+                    <h3>Restaurant Menu</h3>
+
+                    <p>
+                        A simple restaurant menu demonstrating
+                        Flexbox, spacing, typography and basic CSS.
+                    </p>
+
+                    <div class="skills">
+                        <span>Flexbox</span>
+                        <span>Typography</span>
+                        <span>Layout</span>
+                    </div>
+
+                    <a
+                        href="CSS-DAILY-TASKS/day_4_css_task_4/index.html"
+                        class="project-btn">
+                        Open Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- DAY 5 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    05
+                </div>
+
+                <div class="project-icon">
+                    🎬
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-tag">
+                        DAY 5
+                    </span>
+
+                    <h3>MovieFlix</h3>
+
+                    <p>
+                        Netflix-style movie landing page with
+                        hero section, movie cards and hover effects.
+                    </p>
+
+                    <div class="skills">
+                        <span>Cards</span>
+                        <span>Animation</span>
+                        <span>Transition</span>
+                    </div>
+
+                    <a
+                        href="CSS-DAILY-TASKS/day_5_css_task_5/index.html"
+                        class="project-btn">
+                        Open Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- DAY 6 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    06
+                </div>
+
+                <div class="project-icon">
+                    🧊
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-tag">
+                        DAY 6
+                    </span>
+
+                    <h3>3D Product Showcase</h3>
+
+                    <p>
+                        Product showcase using CSS 3D transforms,
+                        perspective, animations and responsive Grid.
+                    </p>
+
+                    <div class="skills">
+                        <span>3D</span>
+                        <span>Transform</span>
+                        <span>Grid</span>
+                        <span>Animation</span>
+                    </div>
+
+                    <a
+                        href="CSS-DAILY-TASKS/day_6_css_task_6/index.html"
+                        class="project-btn">
+                        Open Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <p>ABOUT THIS REPOSITORY</p>
+
+            <h2>Learning CSS One Day At A Time</h2>
+
+            <p>
+                CSS Daily Tasks is a collection of practice projects
+                created to improve frontend development skills.
+                Each project focuses on different HTML and CSS concepts.
+            </p>
+
+            <div class="learning-list">
+
+                <div>
+                    <strong>01</strong>
+                    <span>HTML Structure</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>CSS Styling</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>Flexbox & Grid</span>
+                </div>
+
+                <div>
+                    <strong>04</strong>
+                    <span>Animations & Transitions</span>
+                </div>
+
+                <div>
+                    <strong>05</strong>
+                    <span>Responsive Design</span>
+                </div>
+
+                <div>
+                    <strong>06</strong>
+                    <span>Multi-page Websites</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="logo">
+        CSS<span>Daily</span>
+    </div>
+
+    <p>
+        HTML & CSS Practice Projects
+    </p>
+
+    <p>
+        © 2026 CSS Daily Tasks
+    </p>
+
+</footer>
+
+
+</body>
+</html>
